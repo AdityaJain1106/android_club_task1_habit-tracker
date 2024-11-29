@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <section class="nav-notation">
+      <h1>Habit Tracker</h1>
+      <button id="theme-toggle">🌙</button>
+    </section>
+      <div class="navbar">
+        <div class="person-selector">
+          <select id="person-list"></select>
+          <input type="text" id="new-person" placeholder="Add new person...">
+          <section class="button-sec">
+            <button id="add-person">➕</button>
+            <button id="delete-person" class="delete-person">🗑️</button>
+          </section>
+
+    </header>
+    <main>
+      <div class="habit-input">
+        <input type="text" id="habit-name" placeholder="Enter habit...">
+        <button id="add-habit">➕</button>
+      </div>
+      <ul id="habit-list"></ul>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar .person-selector {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar select,
+.navbar input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.navbar button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #45a049;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-notation{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.habit-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.habit-input input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+.habit-input button{
+  width: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#add-habit button:hover {
+  background-color: #45a049;
+}
+
+#habit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.habit {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+button.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 60px;
+  text-align: center;
+}
+
+button.delete-button:hover {
+  background-color: #e53935;
+}
+
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode header h1 {
+  color: #4caf50;
+}
+
+.dark-mode .navbar {
+  border-color: #444;
+}
+
+.dark-mode .navbar select,
+.dark-mode .navbar input[type="text"] {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+.dark-mode .navbar button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.dark-mode button:hover {
+  background-color: #45a049;
+}
+
+button.delete-person {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.delete-person:hover {
+  background-color: #e53935;
+}
+
+
+.day {
+  width: 35px;
+  height: 35px;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.day.completed {
+  background: #4caf50;
+  color: white;
+}
+
+.tracker {
+  display: flex;
+  gap: 5px;
+}
+
+.delete{
+  background: #e53935;
+  width: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+@media (max-width:550px) and (min-width:425px) {
+  .habit{
+    flex-direction: column;
+  }
+  main{
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .button-sec{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .delete{
+    padding: 10px 10px;
+  }
+}
+@media (max-width:425px) and (min-width:300px) {
+  .habit{
+    flex-direction: column;
+  }
+  main{
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .button-sec{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .person-selector{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #habit-name{
+    padding: 5px;
+  }
+  #add-habit{
+    padding: 7px 7px;
+  }
+  .delete{
+    padding: 10px 10px;
+  }
+}
+@media (max-width:350px) and (min-width:300px) {
+  .tracker{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+  .delete{
+    padding: 5px 5px;
+  }
+  .day{
+    width: 29px;
+    height: 29px;
+  }
+}
